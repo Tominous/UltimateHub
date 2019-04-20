@@ -104,7 +104,7 @@ public class main extends JavaPlugin implements Listener{
 		}
 	}
 	
-	//@EventHandler(priority = EventPriority.HIGHEST)
+	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onPlayerJoin(PlayerJoinEvent event){
 		if(event.getPlayer().hasPermission("update.inform")){
 			if(getConfig().getString("autoUpdate").equalsIgnoreCase("true")){
